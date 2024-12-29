@@ -44,6 +44,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: chJahanzaib1/sampledockerprojet:latest
+        tags: chjahanzaib1/sampledockerprojet:latest
       env:
         DOCKER_BUILDKIT: 1
