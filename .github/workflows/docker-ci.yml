@@ -37,6 +37,11 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
+
+    - name: Debug DNS
+      run: nslookup registry-1.docker.io
+
+
     # Build and push Docker image
     - name: Build and push Docker image
       uses: docker/build-push-action@v3
